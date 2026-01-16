@@ -69,7 +69,7 @@ const textVariants = {
 };
 
 export default function Home() {
-  const [openAccordion, setOpenAccordion] = useState<string | null>(null); // Changed from 'share' to null
+  const [openAccordion, setOpenAccordion] = useState<string | null>(null);
 
   const toggleAccordion = (accordionId: string) => {
     setOpenAccordion(prev => prev === accordionId ? null : accordionId);
@@ -78,93 +78,94 @@ export default function Home() {
   const accordionSections = [
     {
       id: 'hack1',
-      title: 'Hack #1: Make the Most of Every Drop',
+      title: 'Hack #1: Daytime Liquid Care for Daily Nail Support',
       content: (
         <div className="p-4 bg-white space-y-4 text-slate-900">
-          <p>Toenail fungus doesn’t clear up overnight. But with consistency and smart habits, you’ll start to see real change.</p>
+          <p>Use the VigorWell Nail Care Liquid during the day as part of your regular nail routine.</p>
+          <p>Apply a small amount to clean, dry nails and allow it to absorb naturally.</p>
           <div>
-            <h4 className="font-semibold mb-2">How to Maximize Results:</h4>
-            <ul className="space-y-2 list-disc pl-5">
-              <li>Use Daily Without Skipping: Apply twice a day for 3–6 months. Fungus lives deep in the nail and needs time to be pushed out.</li>
-              <li>Prep Before You Apply: Trim and file the nail gently to reduce thickness and help the oil penetrate deeper.</li>
-              <li>Apply to Clean, Dry Nails: Water and dirt block absorption—always wash and dry your feet before use.</li>
-              <li>Use a Thin Layer: A light coat is enough. The formula is concentrated.</li>
-            </ul>
+            <h4 className="font-semibold mb-2">Why it matters:</h4>
+            <p>Daytime application helps maintain nail surface care and supports ongoing nail hygiene as part of a daily routine.</p>
           </div>
-          <p className="italic">"I didn’t see results at first because I didn’t file my nails. Once I started prepping properly and stayed consistent, my nails began growing back clearer."</p>
+          <p className="italic">💡 Tip: Apply before putting on socks or shoes and allow a few minutes for drying.</p>
         </div>
       ),
     },
     {
       id: 'hack2',
-      title: 'Hack #2: Understand What Recovery Really Looks Like',
+      title: 'Hack #2: Overnight Patch for Extended Nail Contact',
       content: (
         <div className="p-4 bg-white space-y-4 text-slate-900">
-          <p>Healing isn’t instant. The infected part of the nail doesn’t disappear—it’s slowly replaced by healthy new growth.</p>
+          <p>At night, apply a VigorWell Nail Care Patch to clean, dry toenails before bedtime.</p>
+          <p>The patch stays in place while you sleep, providing extended overnight contact for up to 8 hours.</p>
           <div>
-            <h4 className="font-semibold mb-2">What to Expect:</h4>
-            <ul className="space-y-2 list-disc pl-5">
-              <li>Week 1: Odor, itching, or athlete’s foot may improve.</li>
-              <li>Week 4+: Healthy nail starts to grow from the base.</li>
-              <li>Month 3–6: New nail gradually replaces the infected one.</li>
-            </ul>
+            <h4 className="font-semibold mb-2">Why it matters:</h4>
+            <p>Overnight wear allows uninterrupted contact time, which many users prefer as part of a nighttime nail care routine.</p>
           </div>
-          <p><span className="font-semibold">Pro Tip:</span> If your nails grow slowly, consider taking a keratin or biotin supplement to support nail regrowth.</p>
-          <p className="italic">"I almost gave up, but then I realized the nail was growing out healthy from the bottom—just like they said!"</p>
         </div>
       ),
     },
     {
       id: 'hack3',
-      title: 'Hack #3: Speed Up Healthy Nail Growth',
+      title: 'Hack #3: Keep Nails Clean & Dry',
       content: (
         <div className="p-4 bg-white space-y-4 text-slate-900">
-          <p>Even after the fungus is gone, you still want smooth, even nails.</p>
+          <p>Before applying liquid or patches:</p>
           <div>
-            <h4 className="font-semibold mb-2">How to Support Nail Recovery:</h4>
             <ul className="space-y-2 list-disc pl-5">
-              <li>Keep Using the Oil Weekly: Prevent recurrence by applying 1–2 times per week after symptoms clear.</li>
-              <li>Exfoliate Gently: Use a pumice or soft buffer to remove dead skin or nail buildup.</li>
-              <li>Moisturize Daily: Dry nails crack and trap fungus. Hydrated nails grow smoother and stronger.</li>
-              <li>Protect from Water Damage: Use socks and breathable shoes. Avoid going barefoot in damp places.</li>
+              <li>Wash feet gently</li>
+              <li>Dry nails thoroughly</li>
+              <li>Trim nails regularly</li>
             </ul>
           </div>
-          <p className="italic">"I applied the oil and also moisturized daily. That combo made my nails feel stronger and helped them grow out clean."</p>
+          <div>
+            <h4 className="font-semibold mb-2">Why it matters:</h4>
+            <p>Good nail hygiene supports comfort and helps maintain a clean environment for routine nail care.</p>
+          </div>
         </div>
       ),
     },
     {
       id: 'hack4',
-      title: 'Hack #4: Stop It from Coming Back',
+      title: 'Hack #4: Stay Consistent with Your Routine',
       content: (
         <div className="p-4 bg-white space-y-4 text-slate-900">
-          <p>Nail fungus often returns when you least expect it. Make prevention part of your routine.</p>
+          <p>Consistency is key for visible nail appearance improvements.</p>
           <div>
-            <h4 className="font-semibold mb-2">How to Prevent Relapse:</h4>
+            <h4 className="font-semibold mb-2">Recommended routine:</h4>
             <ul className="space-y-2 list-disc pl-5">
-              <li>Weekly Maintenance: Even if symptoms are gone, apply once weekly to protect nails.</li>
-              <li>Change Socks Daily: Moisture breeds fungus—keep feet dry and clean.</li>
+              <li>Liquid during the day</li>
+              <li>Patch overnight</li>
+              <li>Daily use as part of a regular nail care habit</li>
             </ul>
           </div>
-          <p className="italic">"Every summer I used to get fungus again—until I started using VigorWell weekly. I haven’t had a flare-up since."</p>
+          <p className="italic">💡 Pro Tip: Set a daily reminder—skipping days may slow visible progress.</p>
         </div>
       ),
     },
     {
       id: 'hack5',
-      title: 'Hack #5: Combine with the Right Products for Faster Results',
+      title: 'Hack #5: Think Long-Term for Healthier-Looking Nails',
       content: (
         <div className="p-4 bg-white space-y-4 text-slate-900">
-          <p>For full protection and a quicker recovery, pairing your treatment with the right tools makes a huge difference.</p>
+          <p>Nails grow slowly, and appearance changes take time.</p>
           <div>
-            <h4 className="font-semibold mb-2">What Works Well with VigorWell:</h4>
             <ul className="space-y-2 list-disc pl-5">
-              <li><span className="font-semibold">VigorWell Nail Fungus Treatment Patches</span><br/>Use overnight or while on-the-go. Helps maintain antifungal activity on the nail for extended hours, especially for stubborn or thickened nails.</li>
-              <li><span className="font-semibold">Daily Nail Oil Treatment</span><br/>Use the 25% Undecylenic Acid liquid formula twice a day to actively fight fungal infection and support new healthy nail growth.</li>
-              <li><span className="font-semibold">Breathable Socks &amp; Open-Toe Footwear</span><br/>Let your feet breathe—avoid trapping moisture that promotes fungal growth.</li>
+              <li>Many users follow a routine for several weeks or longer</li>
+              <li>Patience and consistency are essential</li>
+              <li>Long-term routines often lead to better-looking results</li>
             </ul>
           </div>
-          <p className="italic">"I started using both the oil and the patches—oil in the morning, patch at night. It worked faster than using just one. Plus, the patch made sure the treatment stayed on longer!"</p>
+          <div className="mt-4">
+            <h4 className="font-semibold mb-2">Final Pro Tips from VigorWell Customers:</h4>
+            <ul className="space-y-2 list-disc pl-5">
+              <li>Use liquid during the day and patches at night</li>
+              <li>Keep nails clean, trimmed, and dry</li>
+              <li>Avoid sharing nail tools</li>
+              <li>Stay consistent with daily care</li>
+              <li>Be patient—nail appearance changes gradually</li>
+            </ul>
+          </div>
         </div>
       ),
     },
@@ -182,7 +183,7 @@ export default function Home() {
             height={120}
             className="mb-4"
           />
-          <h1 className="text-xl font-bold text-center text-slate-800">The BEST Toenail Fungus Treatment Hacks – Shared by Our Customers</h1>
+          <h1 className="text-xl font-bold text-center text-slate-800">The Ultimate Toenail Care Guide – Shared by VigorWell Customers</h1>
         </header>
 
         {/* Product image and welcome section */}
@@ -191,15 +192,23 @@ export default function Home() {
             <div className="md:w-1/3 flex justify-center">
           <Image
                 src="/product.jpg"
-                alt="VigorWell 25% Undecylenic Acid Antifungal Treatment"
+                alt="VigorWell Day & Night Nail Care System"
                 width={250}
                 height={250}
                 className="rounded-md"
               />
             </div>
             <div className="md:w-2/3 text-slate-800">
-              <h3 className="text-2xl font-bold mb-4">Featuring: VigorWell 25% Undecylenic Acid Antifungal Treatment</h3>
-              <p className="mb-4">We’ve collected the most effective treatment tips from real users of VigorWell. Whether you’re just starting or struggling with persistent fungal nails, these hacks can help you get better results—faster, longer-lasting, and with healthier nails to show for it.</p>
+              <h3 className="text-2xl font-bold mb-4">Featuring: VigorWell Day & Night Nail Care System</h3>
+              <p className="mb-4">At VigorWell, we believe in consistent routines and long-term care. Our extra-strength nail care system combines daytime liquid care with overnight nail patches to support healthier-looking nails over time. Whether you're dealing with thickened nails, discoloration, brittleness, or long-term nail concerns, these user-favored nail care hacks help support a cleaner, smoother nail appearance—one step at a time.</p>
+              <div className="mt-4 space-y-2">
+                <p className="font-semibold">💜 The VigorWell Difference:</p>
+                <ul className="space-y-1 text-sm">
+                  <li>• Complementary liquid + patch system designed for day & night nail care</li>
+                  <li>• Extra-strength formula developed for routine nail appearance support</li>
+                  <li>• Easy-to-use, non-invasive, and suitable for long-term nail care routines</li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
@@ -265,7 +274,7 @@ export default function Home() {
           className="mt-12 pt-8 border-t border-slate-200"
         >
           <p className="text-sm text-slate-600 leading-relaxed">
-            The information provided in this guide is based on customer experiences and anecdotal evidence. Individual results can vary. This content is intended for informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the guidance of a qualified healthcare provider regarding any medical concerns or conditions. We do not guarantee the effectiveness of any discussed remedies or treatments for specific individuals.
+            For external use only. Do not use on open or broken skin unless otherwise stated. Discontinue use if irritation occurs. Keep out of reach of children. Store at room temperature. This content is for informational purposes only and is not intended to replace professional medical advice, diagnosis, or treatment. Individual experiences may vary.
           </p>
           <div className="mt-6 pb-8 text-center text-sm text-slate-500">
             © 2025 VigorWell®. All rights reserved.
